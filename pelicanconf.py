@@ -6,6 +6,16 @@ SITENAME = "Arvind's Blog"
 SITEURL = ''
 
 PATH = 'content'
+PLUGIN_PATHS = ['pelican-plugins']
+
+THEME = 'pelican-themes/pelican-bootstrap3'
+BOOTSTRAP_THEME = 'flatly'
+
+JINJA_ENVIRONMENT = {'extensions': ['jinja2.ext.i18n']}
+PLUGINS = [
+	'i18n_subsites']
+
+I18N_TEMPLATES_LANG = 'en'
 
 TIMEZONE = 'America/Toronto'
 
